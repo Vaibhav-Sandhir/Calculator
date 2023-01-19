@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="548.0" stylesheets="@../../../../../calc.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.HelloController">
+   <children>
+      <TextField fx:id="textarea" alignment="BOTTOM_RIGHT" editable="false" focusTraversable="false" layoutX="14.0" layoutY="37.0" prefHeight="134.0" prefWidth="523.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font></TextField>
+      <Button fx:id="b1" focusTraversable="false" layoutX="18.0" layoutY="186.0" mnemonicParsing="false" onAction="#number1" prefHeight="49.0" prefWidth="116.0" text="1" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="b2" focusTraversable="false" layoutX="134.0" layoutY="186.0" mnemonicParsing="false" onAction="#number2" prefHeight="49.0" prefWidth="116.0" text="2" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="b3" focusTraversable="false" layoutX="250.0" layoutY="186.0" mnemonicParsing="false" onAction="#number3" prefHeight="49.0" prefWidth="116.0" text="3" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bplus" focusTraversable="false" layoutX="366.0" layoutY="186.0" mnemonicParsing="false" onAction="#add" prefHeight="49.0" prefWidth="116.0" text="+" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="b4" focusTraversable="false" layoutX="18.0" layoutY="236.0" mnemonicParsing="false" onAction="#number4" prefHeight="49.0" prefWidth="116.0" text="4" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="b5" focusTraversable="false" layoutX="134.0" layoutY="236.0" mnemonicParsing="false" onAction="#number5" prefHeight="49.0" prefWidth="116.0" text="5" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="b6" focusTraversable="false" layoutX="250.0" layoutY="236.0" mnemonicParsing="false" onAction="#number6" prefHeight="49.0" prefWidth="116.0" text="6" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bminus" focusTraversable="false" layoutX="366.0" layoutY="236.0" mnemonicParsing="false" onAction="#subtract" prefHeight="49.0" prefWidth="116.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bdivide" focusTraversable="false" layoutX="366.0" layoutY="286.0" mnemonicParsing="false" onAction="#divide" prefHeight="49.0" prefWidth="116.0" text="/" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="b9" focusTraversable="false" layoutX="250.0" layoutY="286.0" mnemonicParsing="false" onAction="#number9" prefHeight="49.0" prefWidth="116.0" text="9" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="b8" focusTraversable="false" layoutX="134.0" layoutY="286.0" mnemonicParsing="false" onAction="#number8" prefHeight="49.0" prefWidth="116.0" text="8" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="b7" focusTraversable="false" layoutX="18.0" layoutY="286.0" mnemonicParsing="false" onAction="#number7" prefHeight="49.0" prefWidth="116.0" text="7" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="b0" focusTraversable="false" layoutX="18.0" layoutY="336.0" mnemonicParsing="false" onAction="#number0" prefHeight="49.0" prefWidth="116.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bpi" focusTraversable="false" layoutX="134.0" layoutY="336.0" mnemonicParsing="false" onAction="#numberPI" prefHeight="49.0" prefWidth="116.0" text=" π" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="be" focusTraversable="false" layoutX="250.0" layoutY="336.0" mnemonicParsing="false" onAction="#numberE" prefHeight="49.0" prefWidth="116.0" text="e" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bmultiply" focusTraversable="false" layoutX="366.0" layoutY="336.0" mnemonicParsing="false" onAction="#multilply" prefHeight="49.0" prefWidth="116.0" text="*" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bln" focusTraversable="false" layoutX="18.0" layoutY="386.0" mnemonicParsing="false" onAction="#ln" prefHeight="49.0" prefWidth="116.0" text="ln" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="blog" focusTraversable="false" layoutX="134.0" layoutY="386.0" mnemonicParsing="false" onAction="#log" prefHeight="49.0" prefWidth="116.0" text="log" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bunderoot" focusTraversable="false" layoutX="250.0" layoutY="386.0" mnemonicParsing="false" onAction="#underoot" prefHeight="49.0" prefWidth="116.0" text="√" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bremainder" focusTraversable="false" layoutX="366.0" layoutY="386.0" mnemonicParsing="false" onAction="#remainder" prefHeight="49.0" prefWidth="116.0" text="\%" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bsin" focusTraversable="false" layoutX="18.0" layoutY="436.0" mnemonicParsing="false" onAction="#sin" prefHeight="49.0" prefWidth="116.0" text="sin" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bcos" focusTraversable="false" layoutX="134.0" layoutY="436.0" mnemonicParsing="false" onAction="#cos" prefHeight="49.0" prefWidth="116.0" text="cos" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btan" focusTraversable="false" layoutX="250.0" layoutY="436.0" mnemonicParsing="false" onAction="#tan" prefHeight="49.0" prefWidth="116.0" text="tan" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bexponent" focusTraversable="false" layoutX="366.0" layoutY="436.0" mnemonicParsing="false" onAction="#exponent" prefHeight="49.0" prefWidth="116.0" text="^" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="bdegree" focusTraversable="false" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#activateDegree" selected="true" text="Degree">
+         <toggleGroup>
+            <ToggleGroup fx:id="selector" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="bradian" focusTraversable="false" layoutX="90.0" layoutY="14.0" mnemonicParsing="false" onAction="#activateRadian" text="Radian" toggleGroup="$selector" />
+      <Button fx:id="bequal" focusTraversable="false" layoutX="490.0" layoutY="186.0" mnemonicParsing="false" onAction="#calculate" prefHeight="98.0" prefWidth="45.0" text="=">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bclearE" focusTraversable="false" layoutX="490.0" layoutY="286.0" mnemonicParsing="false" onAction="#deleteone" prefHeight="98.0" prefWidth="46.0" text="CE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="history" fill="WHITE" layoutX="18.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="522.9366836547852">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Button fx:id="bclear" focusTraversable="false" layoutX="490.0" layoutY="386.0" mnemonicParsing="false" onAction="#cleartext" prefHeight="98.0" prefWidth="46.0" text="C">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
